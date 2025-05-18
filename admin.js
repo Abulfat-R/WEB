@@ -34,7 +34,7 @@ app.post('/login', (req, res) => {
   }
   res.redirect('/login?error=1');
 });
-function requireAuth(req, res, next) {
+function requireAluth(req, res, next) {
   if (!req.session.authenticated) {
     return res.redirect('/login');
   }
